@@ -20,6 +20,9 @@
       html {
         scroll-behavior:smooth
       }
+      html, body {
+        overflow-x:hidden
+      }
       body {
         -webkit-font-smoothing:antialiased
       }
@@ -89,16 +92,16 @@
     </div>
     <header class="bg-cream border-b border-line">
       <div class="max-w-[1160px] mx-auto px-4 sm:px-8 py-3.5 flex items-center justify-between gap-4">
-        <img loading="lazy" src="https://myappz-v2.b-cdn.net/agency/06b60227-1f47-45dd-a89e-4c2ef9d14868/sub/a29e9795-6ea7-491b-ace8-608ade69f8f5/vault/573a808d-e78a-4119-80a2-8e564e8d2be2.png" alt="Focused Mentoring" class="h-10 w-auto block">
-        <a href="#reserve-form" class="inline-flex items-center min-h-[48px] px-[18px] rounded-full bg-navy text-white font-bold text-[15px] no-underline whitespace-nowrap hover:bg-orange transition-colors">
+        <img loading="lazy" src="https://myappz-v2.b-cdn.net/agency/06b60227-1f47-45dd-a89e-4c2ef9d14868/sub/a29e9795-6ea7-491b-ace8-608ade69f8f5/vault/573a808d-e78a-4119-80a2-8e564e8d2be2.png" alt="Focused Mentoring" class="h-10 w-auto min-w-0 max-w-[55%] object-contain object-left block">
+        <a href="#reserve-form" class="inline-flex items-center min-h-[48px] px-4 sm:px-[18px] rounded-full bg-navy text-white font-bold text-[15px] flex-none no-underline whitespace-nowrap hover:bg-orange transition-colors">
           Reserve a place
         </a>
       </div>
     </header>
     <!-- HERO -->
     <section class="bg-cream lg:min-h-[809px]">
-      <div class="max-w-[1160px] mx-auto px-4 sm:px-8 pt-8 pb-10 lg:pt-16 lg:pb-[72px] grid lg:grid-cols-2 gap-8 lg:gap-14 items-stretch">
-        <div class="flex flex-col gap-[22px] pt-2">
+      <div class="max-w-[1160px] mx-auto px-4 sm:px-8 pt-8 pb-10 lg:pt-16 lg:pb-[72px] grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-14 items-stretch">
+        <div class="flex flex-col gap-[22px] pt-2 min-w-0">
           <div class="flex flex-col gap-[18px]">
             <div class="self-start inline-flex items-center px-3.5 py-[7px] rounded-full bg-peach text-[12px] sm:text-[13px] font-bold tracking-[.08em] uppercase leading-tight sm:w-[455px] max-w-full">
               <span class="block">
@@ -132,8 +135,8 @@
             <img loading="lazy" src="https://myappz-v2.b-cdn.net/agency/06b60227-1f47-45dd-a89e-4c2ef9d14868/sub/a29e9795-6ea7-491b-ace8-608ade69f8f5/vault/ee16d7b8-97d5-4ac7-bd54-218b966b1f76.jpeg" alt="A student in a Focused Mentoring session" class="absolute inset-0 w-full h-full object-cover">
           </div>
         </div>
-        <div id="reserve-form" class="scroll-mt-4">
-          <div class="bg-white border border-line rounded-3xl p-5 sm:p-8 flex flex-col gap-5 shadow-[0_18px_40px_-24px_rgba(20,41,69,.35)] lg:min-h-[575px]">
+        <div id="reserve-form" class="scroll-mt-4 min-w-0">
+          <div class="bg-white border border-line rounded-3xl p-5 sm:p-8 flex flex-col gap-5 min-w-0 overflow-hidden shadow-[0_18px_40px_-24px_rgba(20,41,69,.35)] lg:min-h-[575px]">
             <div class="flex flex-col gap-1.5">
               <div class="flex items-baseline gap-2.5 flex-wrap">
                 <div class="text-[30px] font-bold text-orange leading-none">
@@ -147,8 +150,9 @@
                 Wait for results with peace of mind. No deposit, no card details.
               </div>
             </div>
+            <!-- Mobile: w-px + min-w-full stops iPhone Safari stretching the iframe to its content width -->
             <!-- ===== PASTE YOUR CRM FORM EMBED CODE HERE (replace the dashed box below) ===== -->
-            <iframe src="https://hub.legesys.com/form/st-olave-s-stage-2-form" width="100%" height="600" frameborder="0" class="block w-full sm:max-w-[379px] h-[320px] sm:h-[249px] border-0" title="St Olave's Stage 2 reservation form" loading="lazy">
+            <iframe src="https://hub.legesys.com/form/st-olave-s-stage-2-form" width="100%" height="600" frameborder="0" class="block w-px min-w-full sm:min-w-0 sm:w-[379px] sm:max-w-full h-[320px] sm:h-[249px] border-0" title="St Olave's Stage 2 reservation form" loading="lazy">
             </iframe>
             <!-- ===== END FORM ===== -->
             <div class="flex items-center justify-center gap-1.5 text-[15px] font-bold">
@@ -234,7 +238,7 @@
             If he qualifies, his preparation is already arranged. No last-minute search for a course with space, and no scramble in the few weeks before the exam.
           </p>
         </div>
-        <div class="grid md:grid-cols-3 gap-4">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
           <div class="bg-cream rounded-[20px] p-5 sm:p-7 flex flex-col gap-3">
             <div class="w-11 h-11 rounded-full bg-navy text-white flex items-center justify-center font-bold text-lg">
               1
@@ -294,7 +298,7 @@
             One intensive programme: English, Maths and 4 mock exams.
           </h2>
         </div>
-        <div class="grid md:grid-cols-3 gap-4">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
           <div class="bg-white rounded-[20px] p-5 sm:p-7 flex flex-col gap-3.5 border-t-[6px] border-sky">
             <div class="text-sm font-bold text-slate tracking-[.06em] uppercase">
               6 × 2-hour sessions
@@ -348,7 +352,7 @@
     </section>
     <!-- FOUNDER -->
     <section class="bg-white px-4 sm:px-8 py-12 lg:py-24 lg:min-h-[707px]">
-      <div class="max-w-[1160px] mx-auto grid md:grid-cols-2 gap-7 lg:gap-16 items-center">
+      <div class="max-w-[1160px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-7 lg:gap-16 items-center">
         <img loading="lazy" src="https://myappz-v2.b-cdn.net/agency/06b60227-1f47-45dd-a89e-4c2ef9d14868/sub/a29e9795-6ea7-491b-ace8-608ade69f8f5/uploads/0807f055-62ff-4318-a772-8bd73fec8279.jpeg" alt="Praveen Gupta, Co-Founder and Lead Mentor" class="w-full max-w-[480px] mx-auto md:mx-0 aspect-[4/5] object-cover rounded-3xl block bg-line shadow-[0_24px_48px_-28px_rgba(20,41,69,.45)]">
         <div class="flex flex-col gap-[18px]">
           <div class="text-sm font-bold tracking-[.1em] uppercase text-orange">
@@ -437,7 +441,7 @@
             </div>
           </div>
         </div>
-        <div class="w-full grid md:grid-cols-2 gap-4">
+        <div class="w-full grid grid-cols-1 md:grid-cols-2 gap-4">
           <figure class="m-0 bg-white border border-line rounded-[20px] p-5 sm:p-7 flex flex-col gap-4">
             <div class="text-orange tracking-[2px] text-lg">
               ★★★★★
