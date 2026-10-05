@@ -23,6 +23,13 @@
       html, body {
         overflow-x:hidden
       }
+      #form-slot * {
+        max-width:100%
+      }
+      #form-slot iframe {
+        width:1px;
+        min-width:100%
+      }
       body {
         -webkit-font-smoothing:antialiased
       }
@@ -82,7 +89,7 @@
     <!--
   BEFORE PUBLISHING, replace these 6 placeholders with the URLs of the images you upload to your CRM:
   LOGO_URL, LOGO_SLOGAN_URL, HERO_PHOTO_URL, PRAVEEN_PHOTO_URL, TTA_LOGO_URL, AMIE_LOGO_URL
-  Then paste your CRM form embed code where marked "PASTE YOUR CRM FORM EMBED CODE HERE".
+  Then drag your form into the box marked "FORM PLACEHOLDER".
 -->
     <div class="bg-navy text-white text-sm font-semibold px-5 py-2.5 text-center leading-snug pretty">
       Stage 1 results due mid-October · Course starts Sat 17 Oct ·
@@ -150,10 +157,12 @@
                 Wait for results with peace of mind. No deposit, no card details.
               </div>
             </div>
-            <!-- Mobile: w-px + min-w-full stops iPhone Safari stretching the iframe to its content width -->
-            <!-- ===== PASTE YOUR CRM FORM EMBED CODE HERE (replace the dashed box below) ===== -->
-            <iframe src="https://hub.legesys.com/form/st-olave-s-stage-2-form" width="100%" height="600" frameborder="0" class="block w-px min-w-full sm:min-w-0 sm:w-[379px] sm:max-w-full h-[320px] sm:h-[249px] border-0" title="St Olave's Stage 2 reservation form" loading="lazy">
-            </iframe>
+            <!-- ===== FORM PLACEHOLDER: drag your form into this box, then delete the dashed placeholder text ===== -->
+            <div id="form-slot" class="w-full min-w-0">
+              <div class="flex items-center justify-center min-h-[260px] rounded-2xl border-2 border-dashed border-mid bg-cream text-slate text-center font-semibold p-5">
+                Drop your reservation form here
+              </div>
+            </div>
             <!-- ===== END FORM ===== -->
             <div class="flex items-center justify-center gap-1.5 text-[15px] font-bold">
               <svg width="18" height="18" viewBox="0 0 48 48" aria-label="Google" class="flex-none block">
